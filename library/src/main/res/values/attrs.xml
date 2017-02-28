@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingActionView">
+        <attr name="fab" format="reference" />
+        <attr name="outsideColor" format="color" />
+        <attr name="useFabBackgroundColor" format="boolean" />
+        <attr name="useFabMargin" format="boolean" />
+        <attr name="useFabSize" format="string" />
+    </declare-styleable>
+</resources>

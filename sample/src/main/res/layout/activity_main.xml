@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.alessandroborelli.floatingactionview.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+    <!-- Sample 1 - Simple empty View -->
+    <com.alessandroborelli.design.FloatingActionView
+        android:id="@+id/fav"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        app:fab="@+id/fab"
+        app:outsideColor="@color/outsideFAView"
+        tools:visibility="visible"
+        app:useFabMargin="true">
+    </com.alessandroborelli.design.FloatingActionView>
+
+
+    <!-- Sample 2 - View with same height of Fab and some widgets inside -->
+    <!--
+    <com.alessandroborelli.design.FloatingActionView
+        android:id="@+id/fav"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/right_rounded_background"
+        app:fab="@+id/fab"
+        app:outsideColor="@color/outsideFAView"
+        app:useFabMargin="true"
+        app:useFabSize="height"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="insert text"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="@dimen/fab_margin"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_circle"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+
+    </com.alessandroborelli.design.FloatingActionView>
+    -->
+
+
+    <!-- Sample 3 - Simple side menu -->
+    <!--
+    <com.alessandroborelli.design.FloatingActionView
+        android:id="@+id/fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:fab="@+id/fab"
+        app:outsideColor="@color/outsideDarkFAView"
+        tools:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_cloud_upload"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="@dimen/fab_margin"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_folder_open"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="@dimen/fab_margin"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_create"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"/>
+        </LinearLayout>
+    </com.alessandroborelli.design.FloatingActionView>
+    -->
+
+</android.support.design.widget.CoordinatorLayout>
