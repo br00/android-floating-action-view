@@ -36,7 +36,7 @@ A simple View anchored to the Floating Action Button
 
 ## License
 
-    Copyright 2016 André Mion
+    Copyright 2017 Alessandro Borelli
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
