@@ -206,6 +206,7 @@ public class FloatingActionView extends FrameLayout {
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 mIsAnimating = false;
+                mFAB.setVisibility(View.GONE);
                 if (mListener != null) {
                     mListener.onOpen();
                 }
